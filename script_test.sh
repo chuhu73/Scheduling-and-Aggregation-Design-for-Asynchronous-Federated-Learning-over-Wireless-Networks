@@ -1,4 +1,5 @@
 #!/bin/bash
+# Training data need to be allocated to the users (ex. line 5~6) before running the FL process (ex. line 9 to 18)
 
 # distribute training data to each user with i.i.d./non-i.i.d. setting
 python3 ./main_flAsync.py --case 2 --genDataAlloc --num_users 40 --ovl_ratio 1 --num_rlz 10
